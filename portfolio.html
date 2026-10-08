@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aravind Kumar — Web Developer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#eceeff;--ink:#14163a;--mute:#52557f;--acc:#3a46ff;--onacc:#fff;--card:#fff;--peach:#ffb48a;--line:#cfd3f5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10122b;--ink:#eceeff;--mute:#a3a7d6;--acc:#8d96ff;--onacc:#10122b;--card:#191c40;--line:#2c3060}}
+:root[data-theme="dark"]{--bg:#10122b;--ink:#eceeff;--mute:#a3a7d6;--acc:#8d96ff;--onacc:#10122b;--card:#191c40;--line:#2c3060}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;margin:0;line-height:1.02;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+nav b{font:800 22px "Bricolage Grotesque",sans-serif}
+nav div{display:flex;gap:22px;font-weight:500}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 80px;display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(52px,9vw,112px);font-weight:800}
+.hero p{max-width:46ch;color:var(--mute);font-size:19px;margin:24px 0 32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:500;text-decoration:none;background:var(--acc);color:var(--onacc);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:2px solid var(--ink);color:var(--ink)}
+.badge{position:relative;aspect-ratio:1;max-width:340px;justify-self:center;width:100%}
+.badge .disc{position:absolute;inset:0;border-radius:50%;background:var(--acc);display:grid;place-items:center;font:800 clamp(90px,14vw,150px) "Bricolage Grotesque",sans-serif;color:var(--onacc);letter-spacing:-.05em;animation:pop .9s cubic-bezier(.2,1.3,.4,1) both}
+.badge .dot{position:absolute;right:2%;bottom:6%;width:34%;aspect-ratio:1;border-radius:50%;background:var(--peach);display:grid;place-items:center;text-align:center;font:500 14px/1.2 "DM Sans",sans-serif;color:#14163a;transform:rotate(-8deg)}
+@keyframes pop{from{transform:scale(.6) rotate(-12deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){.badge .disc{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+section{padding:72px 0;border-top:2px solid var(--line)}
+section>.wrap{display:grid;grid-template-columns:200px 1fr;gap:32px}
+h2{font-size:clamp(30px,4vw,44px);font-weight:800}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.skills li{padding:10px 18px;border-radius:999px;background:var(--card);border:2px solid var(--line);font-weight:500}
+.card{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:28px}
+.card h3{font-size:26px;margin-bottom:4px}
+.card small{color:var(--mute)}
+.card ul{margin:14px 0 0;padding-left:20px;color:var(--mute)}
+.stack{display:grid;gap:18px}
+.ph{border-style:dashed}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact a.mail{font:800 clamp(24px,5vw,52px)/1.1 "Bricolage Grotesque",sans-serif;word-break:break-all;text-decoration-thickness:4px;text-decoration-color:var(--peach);text-underline-offset:8px}
+footer{padding:36px 0;color:var(--mute);font-size:15px;border-top:2px solid var(--line)}
+@media(max-width:760px){.hero{grid-template-columns:1fr}section>.wrap{grid-template-columns:1fr;gap:18px}.grid2{grid-template-columns:1fr}nav div{gap:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Aravind.</b><div><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></div></nav>
+<header class="hero">
+<div>
+<h1>Aravind Kumar</h1>
+<p>Fresher web developer from a B.Com Computer Applications background. I build clean, responsive interfaces with React.js, JavaScript and Bootstrap, backed by Java and MySQL.</p>
+<div class="btns"><a class="btn" href="#work">See my work</a><a class="btn ghost" href="mailto:aravindkumar73294@gmail.com">Email me</a></div>
+</div>
+<div class="badge" aria-hidden="true"><div class="disc">AK</div><div class="dot">open to<br>first role</div></div>
+</header>
+</div>
+
+<section id="about"><div class="wrap"><h2>About</h2>
+<div>
+<p style="margin-top:0">I'm a motivated B.Com Computer Applications graduate looking for an entry-level role in IT and software development. I enjoy turning ideas into working pages, learning new tools quickly, and solving problems with a team.</p>
+<ul class="skills" aria-label="Strengths">
+<li>Quick learner</li><li>Problem solving</li><li>Teamwork</li><li>Adaptable</li>
+</ul>
+<p style="color:var(--mute)">Languages: Tamil, English</p>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills</h2>
+<ul class="skills">
+<li>JavaScript</li><li>Java</li><li>HTML</li><li>CSS</li><li>React.js</li><li>Bootstrap</li><li>MySQL</li><li>Web development</li>
+</ul></div></section>
+
+<section id="work"><div class="wrap"><h2>Work</h2>
+<div class="stack">
+<div class="card"><h3>Intern, Indra Institute of Education</h3><small>Internship</small>
+<ul><li>Worked in a professional environment and learned everyday workplace practices.</li><li>Built communication, teamwork and problem-solving skills.</li></ul></div>
+<div class="card ph"><h3>Your project name</h3><small>Project, details to be added</small>
+<ul><li>Add 2–3 lines on what you built, the tools you used and your part in it.</li></ul></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><h2>Education</h2>
+<div class="card"><h3>B.Com Computer Applications</h3><small>College name, University name, Graduation year</small></div></div></section>
+
+<section id="contact" class="contact"><div class="wrap"><h2>Contact</h2>
+<div><p style="margin-top:0;color:var(--mute)">Hiring or want to say hello? Email me.</p>
+<a class="mail" href="mailto:aravindkumar73294@gmail.com">aravindkumar73294@gmail.com</a></div></div></section>
+
+<div class="wrap"><footer>© 2026 Aravind Kumar</footer></div>
+</body>
+</html>
